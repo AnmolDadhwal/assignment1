@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Write about yourself"
+        android:textSize="40sp"
+        android:textAlignment="center"/>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Your Name"
+           android:textSize="20sp"
+           android:layout_margin="10dp"
+           />
+       <EditText
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/name"
+           android:hint="Enter your name"
+           android:layout_margin="10dp"
+           android:textSize="20sp"
+           android:layout_weight="1"
+           />
+   </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Number"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/number"
+            android:hint="Enter your number"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your BirthDate"
+            android:textSize="20sp"
+            android:layout_margin="10dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/birthdate"
+            android:hint="Enter your BirthDate"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Are you studing"
+        android:textSize="30sp"
+        android:textAlignment="center"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:textSize="20sp"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter your college name"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/collegename"
+        android:hint="Enter your college name"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="10dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/check"
+        android:layout_gravity="center"
+        android:text="Move"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:layout_marginBottom="20dp"
+        />
+</LinearLayout>
