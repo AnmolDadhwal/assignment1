@@ -22,17 +22,16 @@
            android:layout_height="wrap_content"
            android:text="Your Name"
            android:textSize="20sp"
-           android:layout_margin="10dp"
-           />
+           android:layout_margin="10dp"/>
        <EditText
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:id="@+id/name"
            android:hint="Enter your name"
+           android:inputType="textPersonName"
            android:layout_margin="10dp"
            android:textSize="20sp"
-           android:layout_weight="1"
-           />
+           android:layout_weight="1"/>
    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -43,23 +42,22 @@
             android:layout_height="wrap_content"
             android:text="Your Number"
             android:textSize="20sp"
-            android:layout_margin="10dp"
-            />
+            android:layout_margin="10dp"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/number"
             android:hint="Enter your number"
+            android:inputType="number"
+            android:maxLength="10"
             android:layout_margin="10dp"
             android:textSize="20sp"
-            android:layout_weight="1"
-            />
+            android:layout_weight="1"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
+        android:orientation="horizontal">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -71,6 +69,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/birthdate"
             android:hint="Enter your BirthDate"
+            android:inputType="number"
+            android:maxLength="2"
             android:layout_margin="10dp"
             android:textSize="20sp"
             android:layout_weight="1"/>
@@ -81,11 +81,11 @@
         android:text="Are you studing"
         android:textSize="30sp"
         android:textAlignment="center"/>
-    <LinearLayout
+    <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center">
+        android:layout_gravity="center"
+        android:orientation="horizontal">
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -96,24 +96,15 @@
             android:layout_height="wrap_content"
             android:text="No"
             android:textSize="20sp"/>
-    </LinearLayout>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Enter your college name"
-        android:textSize="20sp"
-        android:textColor="@color/black"
-        android:layout_marginLeft="10dp"
-        />
+    </RadioGroup>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/collegename"
         android:hint="Enter your college name"
+        android:inputType="text"
         android:textSize="20sp"
-        android:textColor="@color/white"
-        android:layout_marginLeft="10dp"
-        />
+        android:layout_marginLeft="10dp"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -122,6 +113,5 @@
         android:text="Move"
         android:layout_marginTop="20dp"
         android:textSize="30sp"
-        android:layout_marginBottom="20dp"
-        />
+        android:layout_marginBottom="20dp"/>
 </LinearLayout>

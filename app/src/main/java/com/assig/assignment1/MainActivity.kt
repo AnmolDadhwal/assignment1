@@ -36,15 +36,15 @@ class MainActivity : AppCompatActivity() {
             }else if (number?.text?.trim().isNullOrEmpty()){
                 number?.error="Enter The Number"
             }else if(birthdate?.text?.trim().isNullOrEmpty()){
-                birthdate?.error="Enter The BirthName"
+                birthdate?.error="Enter The Birth Date"
             }else if (collegename?.text?.trim().isNullOrEmpty()){
-                collegename?.error="Enter The Collegename"
+                collegename?.error="Enter The College name"
             } else {
-                Toast.makeText(
-                    this,
-                    "Value Entered ${name?.text} ${number?.text} ${collegename?.text}",
-                    Toast.LENGTH_SHORT
-                ).show()
+//                Toast.makeText(
+//                    this,
+//                    "Value Entered ${name?.text} ${number?.text} ${collegename?.text}",
+//                    Toast.LENGTH_SHORT
+//                ).show()
                 var intent = Intent(this, MainActivity2::class.java)
                 startActivity(intent)
             }
