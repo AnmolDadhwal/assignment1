@@ -11,6 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Your entered information"
+        android:textStyle="italic"
         android:textSize="35sp"
         android:textAlignment="center"/>
     <LinearLayout
@@ -22,17 +23,14 @@
             android:layout_height="wrap_content"
             android:text="HELLO"
             android:textSize="20sp"
-            android:layout_margin="10dp"
-            />
+            android:layout_margin="10dp" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/un"
-            android:hint="_________________"
+            android:id="@+id/name"
             android:layout_margin="10dp"
             android:textSize="20sp"
-            android:layout_weight="1"
-            />
+            android:layout_weight="1"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -49,11 +47,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/number"
-            android:hint="________________"
+            android:maxLength="10"
             android:layout_margin="10dp"
             android:textSize="20sp"
-            android:layout_weight="1"
-            />
+            android:layout_weight="1"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -70,7 +67,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/birthdate"
-            android:hint="_________________"
             android:layout_margin="10dp"
             android:textSize="20sp"
             android:layout_weight="1"/>
@@ -79,24 +75,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Are you not studing"
-        android:textSize="25sp"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Your college name"
-        android:textSize="20sp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp"
-        />
+        android:textSize="25sp"
+        android:layout_marginLeft="10dp"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/collegename"
-        android:hint="___________________________"
         android:textSize="20sp"
-        android:textColor="@color/white"
-        android:layout_marginLeft="10dp"
-        />
+        android:layout_marginLeft="10dp"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
