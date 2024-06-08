@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:id="@+id/main"
@@ -10,7 +9,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Write about yourself"
+        android:text="@string/Write_about_yourself"
         android:textAlignment="center"
         android:textStyle="italic"
         android:textSize="40sp"/>
@@ -21,14 +20,14 @@
        <TextView
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
-           android:text="Your Name"
+           android:text="@string/Your_Name"
            android:textSize="20sp"
            android:layout_margin="10dp"/>
        <EditText
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:id="@+id/name"
-           android:hint="Enter your name"
+           android:hint="@string/Your_Name"
            android:inputType="textPersonName"
            android:layout_margin="10dp"
            android:textSize="20sp"
@@ -41,14 +40,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Your Number"
+            android:text="@string/Your_Number"
             android:textSize="20sp"
             android:layout_margin="10dp"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/number"
-            android:hint="Enter your number"
+            android:hint="@string/Your_Number"
             android:inputType="number"
             android:maxLength="10"
             android:layout_margin="10dp"
@@ -62,14 +61,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Your BirthDate"
+            android:text="@string/Your_BirthDate"
             android:textSize="20sp"
             android:layout_margin="10dp"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/birthdate"
-            android:hint="Enter your BirthDate"
+            android:hint="@string/Your_BirthDate"
             android:inputType="number"
             android:maxLength="2"
             android:layout_margin="10dp"
@@ -79,7 +78,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Are you studing"
+        android:text="@string/Are_you_studing"
         android:textSize="30sp"
         android:textAlignment="center"/>
     <RadioGroup
@@ -90,7 +89,7 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Yes"
+            android:text="@string/Yes"
             android:layout_marginEnd="20dp"
             android:id="@+id/yes"
             android:textSize="20sp"

@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">assignment1</string>
+    <string name="Write_about_yourself">Write about yourself</string>
+    <string name="Your_Name">Your name\n</string>
+    <string name="Your_Number">Enter your number</string>
+    <string name="Your_BirthDate">Enter your DOB</string>
+    <string name="Are_you_studing">Are you studing\n</string>
+    <string name="Yes">Yes</string>
 </resources>

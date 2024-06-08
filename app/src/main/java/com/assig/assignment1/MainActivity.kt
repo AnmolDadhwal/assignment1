@@ -76,4 +76,9 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+
+    override fun onStart() {
+        super.onStart()
+        Toast.makeText(this, "activity open", Toast.LENGTH_SHORT).show()
+    }
 }
