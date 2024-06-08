@@ -2,6 +2,7 @@ package com.assig.assignment1
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -20,6 +21,8 @@ class MainActivity2 : AppCompatActivity() {
     var tvcollegename: TextView?= null
     var collegename = ""
     var back: Button?=null
+    var study = ""
+    var tvStudy : TextView?=null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -33,18 +36,27 @@ class MainActivity2 : AppCompatActivity() {
             name = it.getString("name") ?: ""
             number = it.getString("number") ?: ""
             dob = it.getString("birthdate")?:""
-            collegename= it.getString("collegename")?:""
+            collegename= it.getString("collegeName")?:""
+            study = it.getString("study")?:""
             println("name $name number $number birthdate $dob collegename $collegename")
         }
         tvname= findViewById(R.id.name)
         tvname?.setText(name)
         tvnumber = findViewById(R.id.number)
         tvnumber?.setText(number)
-        tvdob = findViewById(R.id.birthdate)
+        tvdob = findViewById(R.id.dob)
         tvdob?.setText(dob)
         tvcollegename = findViewById(R.id.collegename)
         tvcollegename?.setText(collegename)
         back= findViewById(R.id.back)
+        tvStudy= findViewById(R.id.study)
+        tvStudy?.text = study
+        if(collegename == ""){
+            tvcollegename?.visibility = View.GONE
+        }else{
+            tvcollegename?.visibility = View.VISIBLE
+            tvcollegename?.setText(collegename)
+        }
         back?.setOnClickListener {
             this.finish()
         }

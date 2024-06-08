@@ -40,6 +40,8 @@ class MainActivity : AppCompatActivity() {
             if (isChecked) {
                 collegename?.visibility = View.VISIBLE
             } else {
+
+                collegename?.setText("")
                 collegename?.visibility = View.GONE
             }
         }
@@ -50,15 +52,26 @@ class MainActivity : AppCompatActivity() {
                 number?.error="Enter The Number"
             } else if((number?.text?.trim()?.length?:0) <10){
                 number?.error = "Number should be valid"
-            } else if(birthdate?.text?.trim().isNullOrEmpty()){
-                birthdate?.error="Enter The Birth Date"
-            }else if (collegename?.text?.trim().isNullOrEmpty()){
-                collegename?.error="Enter The College name"
-            } else {
+            } else if(birthdate?.text?.toString()?.toInt()!! > 31 || birthdate?.text?.toString()?.toInt()!! ==0){
+                birthdate?.error="Enter The Valid Date"
+            }else if(yes?.isChecked==true && collegename?.text?.trim().isNullOrEmpty()){
+                collegename?.error ="Enter clg name"
+            }else if(yes?.isChecked==false && no?.isChecked==false){
+                Toast.makeText(this, "Yes and No not clicked", Toast.LENGTH_SHORT).show()
+            }
+
+            else {
                 var intent = Intent(this, MainActivity2::class.java)
                 intent.putExtra("name", name?.text?.toString()?.trim())
                 intent.putExtra("number",number?.text?.toString()?.trim())
-                intent.putExtra("birthdate",birthdate?.text?.toString()?.trim()?.toInt())
+                intent.putExtra("birthdate",birthdate?.text?.toString()?.trim())
+                intent.putExtra("collegeName",collegename?.text?.toString()?.trim())
+                if(yes?.isChecked==true){
+                    intent.putExtra("study","Studying")
+                }
+                if(no?. isChecked==true){
+                    intent.putExtra("study","Not Studying")
+                }
                 startActivity(intent)
             }
         }
